@@ -1,6 +1,6 @@
 name: 推荐/自荐嘉宾
 description: 如果您想推荐或自荐一位嘉宾参与专访，请选择本条模板填写内容
-title: '推荐嘉宾 - [姓名/花名/昵称]（专栏）'
+title: '推荐/自荐嘉宾 - [姓名]（专栏）'
 
 body:
   - type: markdown
@@ -9,3 +9,47 @@ body:
         ### 标题格式
         推荐格式为 `推荐嘉宾 - [推荐人的姓名] （专栏）`；
         例如：`推荐嘉宾 - 张三（任务专访）` `推荐嘉宾 - 李四`
+- type: input
+    id: channel
+    attributes:
+      label: 栏目
+      description: |
+        目前已有栏目 `个人专访（导师/学生）`、`项目经验分享`。
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: 嘉宾姓名
+      description: 姓名
+    validations:
+      required: true
+
+  - type: input
+    id: github
+    attributes:
+      label: GitHub
+      description: GitHub 链接，可选
+
+  - type: textarea
+    id: org
+    attributes:
+      label: 开源之夏参与项目/身份/年份
+      description: 参与了哪一届开源之夏的什么项目及参与角色
+    validations:
+      required: true
+
+  - type: textarea
+    id: abstract
+    attributes:
+      label: 分享话题（重点想要与大家分享的话题）
+    validations:
+      required: true
+
+  - type: input
+    id: type
+    attributes:
+      label: 专访方式（可选择文字/播客/视频）
+    validations:
+      required: true
