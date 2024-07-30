@@ -1,56 +1,64 @@
-name: “推荐或自荐嘉宾”
-description: “如果您想推荐或自荐一位嘉宾参与专访，请选择本条模板填写内容”
-title: '推荐或自荐嘉宾 - [姓名]（专栏）'
-
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        ### 标题格式
-        推荐格式为 `推荐嘉宾 - [推荐人的姓名] （专栏）`；
-        例如：`推荐嘉宾 - 张三（人物专访）` 
-        
-- type: input
-    id: channel
-    attributes:
-      label: 栏目
-      description: |
-        目前已有栏目 `个人专访（导师/学生）`、`项目经验分享`。
-    validations:
-      required: true
-
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: name
+    id: contact
     attributes:
-      label: 嘉宾姓名
-      description: 姓名
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
-      required: true
-
-  - type: input
-    id: github
-    attributes:
-      label: GitHub
-      description: GitHub 链接，可选
-
+      required: false
   - type: textarea
-    id: org
+    id: what-happened
     attributes:
-      label: 开源之夏参与项目/身份/年份
-      description: 参与了哪一届开源之夏的什么项目及参与角色
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: textarea
-    id: abstract
+    id: logs
     attributes:
-      label: 分享话题（重点想要与大家分享的话题）
-    validations:
-      required: true
-
-  - type: input
-    id: type
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
     attributes:
-      label: 专访方式（可选择文字/播客/视频）
-    validations:
-      required: true
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
