@@ -1,59 +1,46 @@
-name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+name: 参与开源之夏专访专栏
+description: 如果您想推荐或自荐以为嘉宾参与专访，请选择本条模板填写内容
+title: "[推荐或自荐嘉宾-姓名（专栏）]: "
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        ### 标题格式
+        格式为 `推荐或自荐嘉宾 - [姓名] （专栏名称）`；
+        例如：`推荐嘉宾 - 张三（个人专访）` `推荐人 - 李四`
+        
   - type: input
-    id: contact
+    id: channel
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: 专栏
+      description: ｜
+        目前有专栏 `个人专访`、`项目经验分享`。
+        专栏形式可选择文字、播客和视频
     validations:
       required: true
-  - type: dropdown
-    id: version
+      
+  - type: name
+    id: name
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
+      label: 嘉宾名称
+      description: 姓名、参与的开源之夏项目及角色
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+      
+  - type: input
+    id: github
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: GitHub
+      description:  GitHub 链接，可选
+
   - type: textarea
-    id: logs
+    id: expierence
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: 开源之夏项目经历、角色、参与年份
+    validations:
+      required: true
+    
   - type: checkboxes
     id: terms
     attributes:
