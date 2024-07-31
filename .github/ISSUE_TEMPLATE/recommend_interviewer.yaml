@@ -27,7 +27,7 @@ body:
     validations:
       required: true
       
-  - type:  input
+  - type: input
     id: type
     description: ｜
     目前有专栏形式有 `文字`、`播客`、 `视频`。
