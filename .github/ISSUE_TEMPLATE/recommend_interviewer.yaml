@@ -15,8 +15,8 @@ body:
     attributes:
       label: 嘉宾名称
       description: 姓名、参与的开源之夏项目及角色
-      validations:
-        required: true
+    validations:
+      required: true
         
   - type: input
     id: channel
@@ -31,7 +31,7 @@ body:
     id: type
     description: ｜
         目前有专栏形式有 `文字`、`播客`、 `视频`。
-  validations:
+    validations:
       required: true
       
   - type: input
