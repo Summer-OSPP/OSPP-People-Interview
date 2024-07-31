@@ -1,14 +1,14 @@
 name: 参与开源之夏专访专栏
 description: 如果您想推荐或自荐以为嘉宾参与专访，请选择本条模板填写内容
-title: "[推荐或自荐嘉宾-姓名（专栏）]: "
+title: "[推荐或自荐嘉宾-社区-姓名-专栏名称]: "
 
 body:
   - type: markdown
     attributes:
       value: |
         ### 标题格式
-        格式为 `推荐或自荐嘉宾 - 社区 - 姓名`
-        例如：`推荐嘉宾 - openEuler - 张三` 
+        格式为 `推荐或自荐嘉宾 - 社区 - 姓名 - 专栏名称`
+        例如：`推荐嘉宾 - openEuler - 张三 - 专栏名称` 
 
  - type: textarea
    id: introduction
