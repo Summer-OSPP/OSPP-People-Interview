@@ -10,13 +10,13 @@ body:
         格式为 `推荐或自荐嘉宾 - 姓名（社区）`
         例如：`推荐嘉宾 - 张三（openEuler）` 
 
- - type: textarea
-   id: introduction
-   attributes:
-     label: 嘉宾名称
-     description: 姓名、参与的开源之夏项目及角色
-    validations:
-      required: true
+  - type: textarea
+    id: introduction
+    attributes:
+      label: 嘉宾名称
+      description: 姓名、参与的开源之夏项目及角色
+      validations:
+        required: true
         
   - type: input
     id: channel
@@ -30,7 +30,7 @@ body:
   - type: input
     id: type
     description: ｜
-    目前有专栏形式有 `文字`、`播客`、 `视频`。
+        目前有专栏形式有 `文字`、`播客`、 `视频`。
   validations:
       required: true
       
