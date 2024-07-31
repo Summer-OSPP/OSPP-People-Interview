@@ -29,8 +29,10 @@ body:
       
   - type: input
     id: type
-    description: ｜
-        目前有专栏形式有 `文字`、`播客`、 `视频`。
+    attributes:
+      label: 专栏形式
+      description: ｜
+          目前有专栏形式有 `文字`、`播客`、 `视频`。
     validations:
       required: true
       
