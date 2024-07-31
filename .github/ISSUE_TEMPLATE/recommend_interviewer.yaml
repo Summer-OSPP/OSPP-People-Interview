@@ -7,8 +7,8 @@ body:
     attributes:
       value: |
         ### 标题格式
-        格式为 `推荐或自荐嘉宾 - 社区 - 姓名 - 专栏名称`
-        例如：`推荐嘉宾 - openEuler - 张三 - 专栏名称` 
+        格式为 `推荐或自荐嘉宾 - 姓名（社区）`
+        例如：`推荐嘉宾 - 张三（openEuler）` 
 
  - type: textarea
    id: introduction
