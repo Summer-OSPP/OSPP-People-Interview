@@ -13,7 +13,7 @@ body:
   - type: textarea
     id: introduction
     attributes:
-      label: 嘉宾名称
+      label: 嘉宾信息
       description: 姓名、参与的开源之夏项目、年份及角色
     validations:
       required: true
